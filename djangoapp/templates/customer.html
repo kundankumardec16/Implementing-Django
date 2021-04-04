@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titile>CUSTOMER FORM</titile>
+    </head>
+    <body>
+        <form method="POST" enctype="multipart/form-data">
+        <!--enctype indicates how the data is encoded before it reaches the server-->
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADD STUDENT</title>
+    </head>
+    <body>
+        <h2 style="color: firebrick; text-align: center;">: : : : Registration for new candidates : : : :</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <table border="1px" align="center" cellpadding="10px" cellspacing="0px">
+                {{ form.as_table }}
+            </table><br>
+            <center>
+                <input type="checkbox" required> I accept the <u>Terms and Conditions</u></button><br><br>
+                <button type="submit">Save</button>&nbsp;&nbsp;&nbsp;<button type="reset">Reset</button>
+            </center>
+        </form>
+    </body>
+</html>
